@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Pages */
+        .box {
+            width: 100%;
+            height: 100vh;
+            padding: 80px 10%;
+        }
+
+        #box1 {
+            background-color: lightblue;
+        }
+
+        #box2 {
+            background-color: lightyellow;
+        }
+
+        #box3 {
+            background-color: lightpink;
+        }
+
+        #box4 {
+            background-color: lightgreen;
+        }
+
+        /* Content card */
+        .card {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Robot circle */
+        .boxx {
+            width: 150px;
+            height: 150px;
+            left: 70%;
+            top: 70%;
+            position: fixed;
+            border: 3px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .boxx img {
+            width: 140%;
+            height: 140%;
+            position: relative;
+            left: -20%;
+            top: -20%;
+        }
+
+        /* Robot message */
+        .div {
+            width: 180px;
+            min-height: 70px;
+            left: 45%;
+            top: 78%;
+            position: fixed;
+            padding: 10px;
+            border: 3px solid black;
+            background-color: white;
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <nav>
+            <h2>My Website</h2>
+            <a href="#box1">Home</a>
+            <a href="#box2">About</a>
+            <a href="#box3">Services</a>
+            <a href="#box4">Contact</a>
+        </nav>
+
+        <div class="container">
+
+            <div class="box" id="box1">
+                <h1>Welcome to My Website 👋</h1>
+
+                <div class="card">
+                    <h2>Home</h2>
+                    <p>
+                        Welcome! This is my simple webpage
+                        created using HTML and CSS.
+                    </p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+            <div class="box" id="box2">
+                <h1>About Us</h1>
+
+                <div class="card">
+                    <h2>Who We Are</h2>
+                    <p>
+                        We are learning and creating
+                        beautiful websites using CSS.
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="box" id="box3">
+                <h1>Our Services</h1>
+
+                <div class="card">
+                    <h2>What We Do</h2>
+                    <p>
+                        Web Design<br>
+                        HTML<br>
+                        CSS<br>
+                        Responsive Design
+                    </p>
+                    <button>View Services</button>
+                </div>
+            </div>
+
+            <div class="box" id="box4">
+                <h1>Contact Us</h1>
+
+                <div class="card">
+                    <h2>Get in Touch 📩</h2>
+                    <p>
+                        Email: example@gmail.com
+                    </p>
+                    <button>Contact</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Fixed Robot -->
+        <div class="boxx">
+            <img src="robot.png" alt="Robot">
+        </div>
+
+        <div class="div">
+            Hiii, I'm here to help you 🤖!
+        </div>
+
+    </body>
+</body>
+
+</html>

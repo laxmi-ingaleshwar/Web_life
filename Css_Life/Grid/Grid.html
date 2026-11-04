@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 800px;
+            width:800px ;
+            border: 4px solid red;
+            display: grid;
+            
+            /*grid-template-columns: 200px 100px 50px;*/
+            /* grid-template-columns: 1fr 2fr 1fr 2fr; */
+            /* fr-sections */
+            /* grid-template-columns: repeat(10,1fr); */
+            /* grid-template-columns: repeat(auto-fill,200px); */
+            /* grid-template-columns: auto auto auto; */
+
+            
+            /* row */
+            /* grid-template-rows: 200px 100px 300px; */
+            /* grid-auto-flow:rows; */
+            /* grid-auto-rows: 100px; */
+            /* row-gap: 30px; */
+            /* column-gap: 40px; */
+           
+            
+
+            /* column */
+            grid-template-columns: 200px 150px 300px;
+            /*grid-auto-flow: column; */
+            /* grid-auto-columns: 200px; */
+            /* gap: 50px 50px; */
+            /* justify--horizantally entire container */
+            /* justify-content: center; */
+            /* align--vertically  */
+            /* align-content: end; */
+            gap: 10px;
+            padding: 10px;
+
+
+        } 
+        .box{
+            padding: 10px;
+            border: 3px solid;
+        }
+        #box1{
+            background-color: lightpink;
+            /* grid-column-start: 1;
+            grid-column-end: 5; */
+            grid-column: 1/5;
+            /* grid-area: 1/1/4/5; */
+        }
+        #box2{
+            background-color: lightgreen;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            /* justify-self: start; */
+            /* align-self:end; */
+            /* place-self:center; */
+        }
+        #box3{
+            background-color: lightyellow;
+            grid-column-start: 2;
+           
+        }
+        #box4{
+            background-color: lightsalmon;
+            grid-column-start: 3;
+            grid-column-end:5 ;
+            
+        }
+        #box5{
+            background-color: purple;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        #box6{
+            background-color: orange;
+            grid-column-start: 1;
+            grid-column-end:3 ;
+        }
+        #box7{
+            background-color: chocolate;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        #box8{
+            background-color: lightskyblue;
+            grid-column: 1/5;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- grid-- decides number of columns and size of particular columns -->
+    <div class="container">
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+        <div class="box" id="box4">box 4</div>
+        <div class="box" id="box5">box 5</div>
+        <div class="box" id="box6">box 6</div>
+        <div class="box" id="box7">box 7</div>
+        <div class="box" id="box8">box 8</div>
+        
+    </div>
+</body>
+</html>

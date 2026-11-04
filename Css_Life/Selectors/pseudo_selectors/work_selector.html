@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .descendant p{
+       background-color: blue; 
+       color: white;
+    }
+    .child>p{
+        background-color: blue;
+        color: white;
+    }
+    .adjacent h1+p {
+        background-color: blue;
+        color: white;
+    }
+    .general h1~p{
+        background-color: blue;
+        color: white;
+    }
+   </style>
+</head>
+<body>
+    <div class="descendant" >
+        <h1> Descendant Combinator</h1>
+        <!-- anywhere inside -->
+        <p> child </p>
+        <p> child </p>
+        <ul>
+            <li><p> Descendent</p></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="child">
+        <h1> Child Combinator</h1>
+        <!-- only the direct children(>) greater than -->
+        <p> child </p>
+        <p> child </p>
+        <ul>
+            <li><p> Descendent </p></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="adjacent">
+        <h1> Adjacent Sibling Combinator</h1>
+        <!-- (+) immediately next sibling -->
+        <p> First Sibling after heading</p>
+        <p> Second Sibling after heading</p>
+    </div>
+    <hr>
+    <div class="general">
+        <h1> General Sibling Combinator</h1>
+        <!-- (~) all matching siblings after -->
+        <p> First Sibling after heading</p>
+        <p> Second Sibling after heading </p>
+    </div>
+</body>
+</html>

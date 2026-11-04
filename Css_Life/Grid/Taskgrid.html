@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+        }
+
+        .box {
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 8px;
+            color: whitesmoke;
+            background-color: rgb(57, 3, 3);
+            font-size: 18px;
+            text-align: center;
+            font-family: Times New Roman, Times, serif;
+
+        }
+
+        
+
+        #box13 {
+            grid-column: 1/3;
+        }
+
+        #box14 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        #box15 {
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+
+        #box16 {
+            grid-column-start: 7;
+            grid-column-end: 9;
+        }
+
+        #box17 {
+
+            grid-column-start: 9;
+            grid-column-end: 11;
+        }
+
+        #box18 {
+            grid-column-start: 11;
+            grid-column-end: 13;
+        }
+
+        #box19 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        #box20 {
+            grid-column-start: 4;
+            grid-column-end: 7;
+        }
+
+        #box21 {
+            grid-column-start: 7;
+            grid-column-end: 10;
+        }
+
+        #box22 {
+            grid-column-start: 10;
+            grid-column-end: 13;
+        }
+
+        #box23 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        #box24 {
+            grid-column-start: 4;
+            grid-column-end: 9;
+        }
+
+        #box25 {
+            grid-column-start: 9;
+            grid-column-end: 13;
+        }
+
+        #box26 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        #box27 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+        }
+
+        #box28 {
+            grid-column-start: 9;
+            grid-column-end: 13;
+        }
+
+        #box29 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        #box30 {
+            grid-column-start: 5;
+            grid-column-end: 13;
+        }
+
+        #box31 {
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+
+        #box32 {
+            grid-column-start: 6;
+            grid-column-end: 13;
+        }
+
+        #box33 {
+            grid-column-start: 1;
+            grid-column-end: 7;
+        }
+
+        #box34 {
+            grid-column-start: 7;
+            grid-column-end: 13;
+        }
+
+        #box35 {
+            grid-column-start: 1;
+            grid-column-end: 8;
+        }
+
+        #box36 {
+            grid-column-start: 8;
+            grid-column-end: 13;
+        }
+
+        #box37 {
+            grid-column-start: 1;
+            grid-column-end: 9;
+        }
+
+        #box38 {
+            grid-column-start: 9;
+            grid-column-end: 13;
+        }
+
+        #box39 {
+            grid-column-start: 1;
+            grid-column-end: 10;
+        }
+
+        #box40 {
+            grid-column: 10/13;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">one </div>
+        <div class="box" id="box2">one </div>
+        <div class="box" id="box3">one </div>
+        <div class="box" id="box4">one </div>
+        <div class="box" id="box5">one </div>
+        <div class="box" id="box6">one </div>
+        <div class="box" id="box7">one </div>
+        <div class="box" id="box8">one </div>
+        <div class="box" id="box9">one </div>
+        <div class="box" id="box10"> one </div>
+        <div class="box" id="box11"> one </div>
+        <div class="box" id="box12"> one </div>
+
+        <div class="box" id="box13"> two</div>
+        <div class="box" id="box14">two</div>
+        <div class="box" id="box15">two</div>
+        <div class="box" id="box16">two</div>
+        <div class="box" id="box17">two</div>
+        <div class="box" id="box18">two</div>
+
+        <div class="box" id="box19"> three </div>
+        <div class="box" id="box20"> three </div>
+        <div class="box" id="box21"> three </div>
+        <div class="box" id="box22"> three </div>
+
+        <div class="box" id="box23">one-fourth</div>
+        <div class="box" id="box24">one-fourth</div>
+        <div class="box" id="box25">one-half</div>
+
+        <div class="box" id="box26">four</div>
+        <div class="box" id="box27">four</div>
+        <div class="box" id="box28">four</div>
+
+        <div class="box" id="box29">one-third</div>
+        <div class="box" id="box30">two-thirds</div>
+
+
+        <div class="box" id="box31">five</div>
+        <div class="box" id="box32">seven</div>
+
+
+        <div class="box" id="box33">six</div>
+        <div class="box" id="box34">six</div>
+
+        <div class="box" id="box35">seven</div>
+        <div class="box" id="box36">five</div>
+
+        <div class="box" id="box37">eight</div>
+        <div class="box" id="box38">four</div>
+
+        <div class="box" id="box39">nine</div>
+        <div class="box" id="box40">three</div>
+
+
+    </div>
+</body>
+
+</html>

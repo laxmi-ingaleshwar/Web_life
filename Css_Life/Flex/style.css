@@ -1,0 +1,103 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffb27f;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    width: 920px;
+    height: 330px;
+    margin: 80px auto 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    align-content: flex-start;
+}
+
+
+
+
+/* First row */
+#green {
+    width: 440px;
+    height: 117px;
+    background-color: #4fa166;
+}
+
+#orange {
+    width: 207px;
+    height: 127px;
+    background-color: #ff6035;
+}
+
+#grey {
+    width: 207px;
+    height: 82px;
+    background-color: #c9c9c9;
+}
+
+
+
+
+/* Second row */
+#purple {
+    height: 86px;
+    width: 207px;
+    background-color: #a86bea;
+}
+
+#yellow {
+    height: 86px;
+    width: 207px;
+    background-color: #ffff73;
+}
+
+#violet {
+    height: 86px;
+    width: 207px;
+    background-color: #c083cf;
+}
+
+#brown {
+    height: 126px;
+    width: 207px;
+    margin-top: -40px;
+    background-color: #683232;
+}
+
+
+
+
+/* Third row */
+#lightgreen {
+    width: 207px;
+    height: 105px;
+    background-color: #6dfb8d;
+}
+
+#pink {
+    width: 668px;
+    height: 105px;
+    background-color: #ff7378;
+}
+
+
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 95px;
+    letter-spacing: 3px;
+
+    text-shadow: 5px 5px 0 black;
+    margin-top: 30px;
+}

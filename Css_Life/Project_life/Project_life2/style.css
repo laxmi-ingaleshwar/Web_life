@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.mainnavbar {
+    width: 100vw;
+    height: 70px;
+    /* border: 2px solid; */
+    display: flex;
+    border:2px solid;
+    background-color: lightgreen;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+
+/* left nav */
+.leftnav {
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 10px;
+
+    /* background-color: aquamarine; */
+}
+
+/* right nav */
+
+.rightnav {
+    width: 50%;
+    /* background-color: antiquewhite; */
+    align-items: center;
+    display: flex;
+
+}
+
+.rightnav ul {
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.rightnav ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.rightnav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.rightnav ul button {
+    padding: 13px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+
+
+
+/* main  */
+
+main {
+    width: 100vw;
+    height: 80vh;
+    /* background-color: lightpink; */
+    border-bottom: 2px solid;
+    display: flex;
+}
+
+
+/* leftmain */
+.leftmain {
+    width: 60%;
+    height: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 100px;
+    gap: 60px;
+    
+}
+
+.leftmain h1 {
+    letter-spacing: 4px;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 90px;
+    align-self: flex-start;
+    padding-left: 50px;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.leftmain p {
+    align-self: flex-start;
+    padding-left: 50px;
+    font-size: 30px;
+
+}
+
+.leftmain button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    align-self: flex-start;
+    padding: 20px 30px;
+    margin-left: 40px;
+    font-size: medium;
+
+
+}
+
+
+/* rightmain */
+.rightmain {
+    width: 40%;
+    height: 100%;
+    /* background-color: lightseagreen; */
+   
+}
+.rightmain img{
+    width: 600px;
+    bottom: -10px;
+    
+}
+
+
+
+/* footer */
+footer{
+    width: 100vw;
+    height:calc(100vh - 70px - 80vh);
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+footer ul li{
+    list-style: none;
+    font-size: 20px;
+    color: white;
+
+}

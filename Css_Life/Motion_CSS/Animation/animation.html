@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .mainbox {
+            width: 500px;
+            height: 500px;
+            border: 3px solid;
+            background: lightcyan;
+        }
+
+        .childbox {
+            width: 100px;
+            height: 100px;
+            background-color: lightsalmon;
+            color: white;
+            animation-name: superman;
+            animation-duration: 2s;
+            /* border-radius: 20px; */
+            animation-timing-function: ease;
+            /* animation-timing-function: ease-in; */
+            animation-timing-function: ease-out;
+            /* animation-delay: 2s; */
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+
+        }
+
+        /* @keyframes superman {
+            from{
+                transform: translate(0px,0px);
+            }
+            to{
+                transform: translate(400px,0px);
+            }
+        } */
+
+
+
+        @keyframes superman {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            25% {
+                transform: translate(400px, 0px);
+            }
+            50%{
+                transform: translate(400px,400px);
+            }
+            75%{
+                transform: translate(0px,400px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="childbox">
+
+            <h1>🐧</h1>
+        </div>
+    </div>
+</body>
+
+</html>

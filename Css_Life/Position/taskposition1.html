@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+            font-weight: bold;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .box {
+            width: 100%;
+            height: 100vh;
+            /* border: 5px solid black; */
+            position: sticky;
+        }
+
+        .boxx {
+            width: 80px;
+            height: 80px;
+            left: 85%;
+            top: 88%;
+            border: 3px solid black;
+            position: fixed;
+            border-radius: 50%;
+
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        #box1 {
+            position: sticky;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        #box2 {
+            padding: 40px;
+            position: sticky;
+            background-color: lightyellow;
+        }
+
+        #box3 {
+            position: sticky;
+            background-color: lightpink;
+            padding: 60px;
+        }
+
+        #box4 {
+            position: sticky;
+            background-color: lightgreen;
+            padding: 60px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background-color: whitesmoke;
+            border: 1px solid;
+        }
+
+        .div {
+            width: 150px;
+            height: 60px;
+            border: 3px solid black;
+            left: 70%;
+            top: 90%;
+            position: fixed;
+            padding: 5px;
+            color: rgb(0, 0, 255);
+            font-weight: bold;
+        }
+
+        .boxx img {
+            width: 180%;
+            height: 180%;
+            object-fit: contain;
+            position: relative;
+            left: -40%;
+            top: -40%;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2>Pixelia🤖</h2>
+        <a href="#box1">Home</a>
+        <a href="#box2">About</a>
+        <a href="#box3">Services</a>
+        <a href="#box4">Contact</a>
+
+    </nav>
+
+    <div class="container">
+        <div class="box" id="box1">
+            <h1> Welcome to Pixelia🤖</h1>
+            <div class="card">
+                <h3> Simple. Creative. You</h3>
+            </div>
+        </div>
+
+
+        <div class="box" id="box2">
+            <h2> A little space made with <br>
+                creativity and code 💗</h2>
+        </div>
+
+
+        <div class="box" id="box3">
+            <h1> Our Services 😎</h1>
+            <div class="card">
+                <h3> 1.HTML & CSS Projects</h3>
+                <h3> 2.Basic Web Design</h3>
+            </div>
+        </div>
+
+
+        <div class="box" id="box4">
+            <div class="card">
+                <h1> Let's Connect</h1>
+                <h3> Have an idea?</h3>
+                <h3> We'd love to hear 💖</h3>
+            </div>
+        </div>
+
+
+        <div class="boxx" id="boxx1">
+            <img src="./robot.png">
+        </div>
+
+        <div class="div" id="main">
+            Hiii! i'm Codi🤖
+            How can i help?💗
+        </div>
+    </div>
+</body>
+
+</htm

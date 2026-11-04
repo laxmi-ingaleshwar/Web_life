@@ -1,0 +1,44 @@
+#box{
+    height: 400px;
+    width: 400px;
+    border-width: 2px;
+
+    border-style: solid;
+    /* specify the style of the border
+    values=none(d),dashed dotted solid ridge groove */
+
+    border-color: blue;
+    /* specify the color of the border */
+
+    border: 2px solid blue;
+    border: 10px dashed lightcoral;
+
+
+    border-top: 45px groove lightseagreen;
+    border-bottom: 40px ridge limegreen;
+    border-left: 10px dotted lightpink;
+    border-right: 20px dashed lightgreen;
+    
+}
+#box1{
+    height: 400px;
+    width: 400px;
+    border: 5px solid palevioletred;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+
+    /* set of 4 values */
+    border-radius: 10px 20px 30px 40px;
+                /* t-1  t-r  b-r  b-l */
+    
+    /* set of 3 values */
+    border-radius: 10px   20px   30px;
+                 /* t-l  t-r&b-r  b-l */
+
+}
+table{
+    border-spacing: 20px;
+    border-collapse: collapse;
+}
