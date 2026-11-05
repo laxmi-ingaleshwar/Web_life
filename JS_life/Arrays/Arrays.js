@@ -185,7 +185,6 @@
 // let data = ['red', 'green']
 // console.log(arr.every((data)=> data !== undefined)); //? true
 
-vhgfvgd
 
 
 
