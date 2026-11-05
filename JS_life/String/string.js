@@ -61,8 +61,8 @@
 
 
 //& 3.raw
-// let str = String.raw`hello@123clme<3imhere|hehehehe..)...... `
-// console.log(str);
+let str = String.raw`hello@123clme<3imhere|hehehehe..)...... `
+console.log(str);
 
 
 //!---Instance Methods

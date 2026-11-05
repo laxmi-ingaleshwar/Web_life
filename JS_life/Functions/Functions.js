@@ -1,11 +1,11 @@
 //! Functions
 
-function print(){
-    console.log("Hello Javascript");
-    console.log("How are you");
+// function print(){
+//     console.log("Hello Javascript");
+//     console.log("How are you");
 
-}
-print()
+// }
+// print()
 
 
 // function print(){
@@ -84,37 +84,39 @@ print()
 // let add = (a, b) => (a + b)
 // console.log(add(10, 20));
 
-
-
-//& 2. if we have parameters , no need of paranthesis()
+//& 2. if we have single parameters , no need of paranthesis()
 
 // let add = a => a + 20
 // {
 //     console.log(add(10));
 // }
 
-//& 3.
-// let addition = _ => 20 + 20
+//& 3.No parameters – Empty parentheses(If an arrow function does not have any parameters,
+//&  we must use empty parentheses () / _.)
+// let addition = () => 20 + 20
 // console.log(addition());
 
-//& 4. Implicit return
+//& 4. Implicit return--> When we write a single expression without curly braces, 
+//& JavaScript automatically returns its result. (Implicit return means no need to write the return keyword.)
+
 // let add = (a, b) => (a + b)
 // console.log(add(10, 20));
 
-//& 5. explicit return--> if there multiple statements, use to explicitly{}
+//& 5. explicit return--> If we have multiple statements inside an arrow function,
+//&  we need curly braces {} and must explicitly use the return keyword when returning a value.
 // let addition = (a, b) => {
 //     return a + b ;
 // }
 // console.log(addition (10, 20));
 
-//& 6. function expression
-// let addition = function printAdd(){
+//& 6. function expression--> means storing a function inside a variable
+// let addition = function printAdd(){ //? addition is the variable here
 //     console.log(10 + 20);
 
 // }
 // addition()
 
-//& callback function--> is a function passed into another function as an argument
+//~ 4. callback function--> is a function passed into another function as an argument
 // function add() {
 //     console.log(30 + 20);
 
@@ -123,7 +125,6 @@ print()
 //     Function()
 // }
 // Task(add)
-
 
 
 // function Task(Function) {
@@ -135,7 +136,7 @@ print()
 // }
 // )
 
-//~ HOF(higher order function)--> function which accepts a callback function as parameter
+//~ 5. HOF(higher order function)--> function which accepts a callback function as parameter
 // function Task(){
 //     return function(){
 //         console.log("Thank you");

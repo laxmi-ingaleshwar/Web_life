@@ -78,3 +78,118 @@
 // console.log(Array.of(10)); //? [ 10 ]   
 
 //testing github
+
+//& array instance method
+
+//~1. push()--> adds one or more element to the end of the array
+// let array = [1,2,3,4,5]
+// array.push('rani')
+// console.log(array); //? [ 1, 2, 3, 4, 5, 'rani' ]
+
+//~ 2. pop()--> remove the element from the end of the array
+// let array = [1,2,3,4,5]
+// array.pop()
+// console.log(array); //? [ 1, 2, 3, 4 ] 
+
+//~3. shift() --> remove the first element of the array
+// let array = [1,2,3,4,5]
+// array.shift()
+// console.log(array); //? [ 2, 3, 4, 5 ]
+
+//~4. unshift() --> add an element to the starting of the array
+// let array = [1,2,3,4,5]
+// array.unshift(0)
+// console.log(array); //? [ 0, 1, 2, 3, 4, 5 ]
+
+//~ 5.slice()
+// let array = [10,20,30,40,50]
+// console.log(array.slice(3)); //? [ 40, 50 ]
+// console.log(array.slice(2,5)); //? [ 30, 40, 50 ]
+// console.log(array.slice(-3)); //? [ 30, 40, 50 ]
+// console.log(array.slice(-2)); //? [ 40, 50 ]
+// console.log(array.slice(-1,-3)); //? []
+// console.log(array.slice(4,2)); //? []
+
+
+//~6. splice()
+// let array = [10,20,30,40,50]
+// let DeletedData = array.splice(1,2) //? [ 10, 40, 50 ]
+// let DeletedData = array.splice(1,0,'somu', 'rani') //? [10, 'somu', 'rani', 20, 30, 40,50]
+// console.log('DeletedData'+ DeletedData); //? DeletedData20,30 [ 10, 40, 50 ]
+
+// console.log(array);
+
+
+//~ 7. concat()
+// let arr1 = [10,20]
+// let arr2 = [30,40]
+// let newarr = (arr1.concat(arr2))
+// console.log(newarr); //? [ 10, 20, 30, 40 ]
+
+//~ 8. reverse()
+// let array = [10,20,30,40,50,60]
+// console.log(array.reverse()); //? [ 60, 50, 40, 30, 20, 10 ]
+
+
+//~ 9. join()--> 
+// let array = [10,20,30,40,50,60]
+// console.log(array.join()); //? 10,20,30,40,50,60
+// console.log(array.join('-')); //? 10-20-30-40-50-60
+// console.log(array.join("$")); //? 10$20$30$40$50$60
+// console.log(array.join('')); //? 102030405060
+
+
+//~ 10. indexof()
+// let arr =[10,20,30,40,50,60]
+// console.log(arr.indexOf(40)); //? 3
+// console.log(arr.indexOf(70)); //? -1
+
+//~ 11. lastindexof()
+// let arr =[10,20,30,40,50,60]
+// console.log(arr.lastIndexOf(60)); //? 5
+// console.log(arr.lastIndexOf(90)); //? -1
+
+
+//~ 12. includes()--> if the element present in the array gives true, if not false 
+// let arr = [1,2,3,4]
+// console.log(arr.includes(3)); //? true
+// console.log(arr.includes(6)); //? false
+
+
+//~ 13. entries()
+// let arr = [10,20,30,40,50]       
+// for(let x of arr.entries()){
+//     console.log(x);
+
+// }
+
+//~ 14. keys()
+// let arr = [10,20,30,40,50]
+// for (let x of arr.keys()){
+//     console.log(x);
+
+// }
+
+//~ 15. values()                                            
+// let arr1 = [10,20,30,40,50]          
+// for (let x of arr1.values()){        
+//     console.log(x);  
+
+// }   
+
+//~ 16. every()
+let arr = [2, 4, 6]
+console.log(arr.every((num)=> num % 2 === 0)); //? true
+console.log(arr.every ((num)=> num %2 !== 0 )); //? false
+
+let data = ['red', 'green']
+console.log(arr.every((data)=> data !== undefined)); //? true
+
+vhgfvgd
+
+
+
+
+
+
+
