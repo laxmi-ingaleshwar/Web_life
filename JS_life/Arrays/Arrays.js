@@ -178,12 +178,12 @@
 // }   
 
 //~ 16. every()
-let arr = [2, 4, 6]
-console.log(arr.every((num)=> num % 2 === 0)); //? true
-console.log(arr.every ((num)=> num %2 !== 0 )); //? false
+// let arr = [2, 4, 6]
+// console.log(arr.every((num)=> num % 2 === 0)); //? true
+// console.log(arr.every ((num)=> num %2 !== 0 )); //? false
 
-let data = ['red', 'green']
-console.log(arr.every((data)=> data !== undefined)); //? true
+// let data = ['red', 'green']
+// console.log(arr.every((data)=> data !== undefined)); //? true
 
 vhgfvgd
 
