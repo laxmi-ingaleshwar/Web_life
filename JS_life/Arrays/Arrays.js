@@ -177,7 +177,7 @@
 
 // }   
 
-//~ 16. every()
+//~ 16. every()-> it checks every elements, all elements should satisfies the condition. then true, if not false
 // let arr = [2, 4, 6]
 // console.log(arr.every((num)=> num % 2 === 0)); //? true
 // console.log(arr.every ((num)=> num %2 !== 0 )); //? false
@@ -186,7 +186,74 @@
 // console.log(arr.every((data)=> data !== undefined)); //? true
 
 
+//~ 17. some()--> atleast one element should  satisfies the condition, gives true if not false
+// let array = [1,2,3,4,5,6,7]
+// console.log(array.some((num)=>num>5)); //? true
 
+// let array = [1,2,3,4,5]
+// console.log(array.some((num)=>num>5)); //? false
+
+
+//~ 18. fill()-> fill the mentioned value from specified starting & ending index.
+// let array = [1,2,3,4,5,6]
+// console.log(array.fill('rani',1,4));  //? [ 1, 'rani', 'rani', 'rani', 5, 6 ]
+// console.log(array.fill('ramya',0,4)); //? [ 'ramya', 'ramya', 'ramya', 'ramya', 5, 6 ]
+
+//~ 19.find()--> it gives the result which first value satisfies the condition 
+// let array = [1,2,3,4,5,6]
+// console.log(array.find((num)=>num>4)); //? 5
+
+//~ 20. findindex()
+// let array = [1,2,0,1,2,3,4,5,6]
+// console.log(array.findIndex((num)=>num>3)); //? 6
+
+//~ 21. findlast()--> returns the last element in the array that satisfies provided function
+// let array = [0,1,2,3,4,5,6,7,]
+// console.log(array.findLast((num)=>num<5)); //? 4
+
+
+//~ 22.findlastindex()
+// let array = [1,0,1,2,3,4,5,6,7,]
+// console.log(array.findLastIndex((num)=>num<5)); //? 5
+
+//~ 23. flat()
+// let array = [1,2,3,[6,7,[10,20,30,[1000,2000]],100,200,300]]
+// console.log(array.flat(2)); //? [ 1, 2, 3, 6, 7, 10, 20, 30, [ 1000, 2000 ], 100, 200, 300 ]
+// console.log(array.flat()); //? [ 1, 2, 3, 6, 7, [ 10, 20, 30, [ 1000, 2000 ] ], 100, 200, 300 ]
+// console.log(array.flat(Infinity));  //? [ 1, 2, 3, 6, 7, 10, 20, 30,1000, 2000, 100, 200, 300]
+
+//~ 24. toReversed()  
+// let data = [1,2,3,4,5]
+// console.log(data.reverse()); //? [ 5, 4, 3, 2, 1 ]
+// console.log(data);           //? [ 5, 4, 3, 2, 1 ] (reverse()-it will modified the original string)
+    //! diff between these two important
+// console.log(data.toReversed()); //? [ 5, 4, 3, 2, 1 ]
+// console.log(data);              //? [ 1, 2, 3, 4, 5 ] (toReversed()-it will not modified the original string.)
+
+
+//~ 25. tospliced()
+// let data = [1,2,3,4,5,6]
+// console.log(data.toSpliced());
+// console.log(data);
+
+//~26. sort()--> 
+// let data = [1,4,3,7,2,9,0]
+// console.log(data.sort()); //? [0, 1, 2, 3, 4, 7, 9]
+
+// let data = [1,8,20,30,7,9]
+// console.log(data.sort()) //? [ 1, 20, 30, 7, 8, 9 ]
+// console.log(data.sort((a,b)=>a-b)); //? [ 1, 7, 8, 9, 20, 30 ]
+// console.log(data.sort((a,b)=>b-a)); //? [ 30, 20, 9, 8, 7, 1 ]
+// console.log(data); //? [ 30, 20, 9, 8, 7, 1 ] 
+
+
+//~ 27. tosorted()
+// let data = [1,2,4,20,40,7]
+// console.log(data.toSorted()); //? [ 1, 2, 20, 4, 40, 7 ]
+// console.log(data.toSorted((a,b)=>a+b)); //? [ 1, 2, 4, 20, 40, 7 ]
+// console.log(data.toSorted((a,b)=>a-b)); //? [ 1, 2, 4, 7, 20, 40 ]
+
+// console.log(data); //? [ 1, 2, 4, 20, 40, 7 ]
 
 
 
