@@ -203,7 +203,8 @@
 // let array = [1,2,3,4,5,6]
 // console.log(array.find((num)=>num>4)); //? 5
 
-//~ 20. findindex()
+//~ 20. findindex()-> Searches from the front to the back of the array and tells the index
+//~ of the first item that matches rule.
 // let array = [1,2,0,1,2,3,4,5,6]
 // console.log(array.findIndex((num)=>num>3)); //? 6
 
