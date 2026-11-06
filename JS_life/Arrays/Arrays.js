@@ -226,7 +226,7 @@
 // let data = [1,2,3,4,5]
 // console.log(data.reverse()); //? [ 5, 4, 3, 2, 1 ]
 // console.log(data);           //? [ 5, 4, 3, 2, 1 ] (reverse()-it will modified the original string)
-    //! diff between these two important
+    //! diff between these two are important
 // console.log(data.toReversed()); //? [ 5, 4, 3, 2, 1 ]
 // console.log(data);              //? [ 1, 2, 3, 4, 5 ] (toReversed()-it will not modified the original string.)
 
