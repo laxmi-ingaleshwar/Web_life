@@ -43,5 +43,18 @@ can cause unexpected behaviour.
 executes code line by line.
 can cause delays if one task takes too long.
 
+JAVASCRIPT CAN RUN IN TWO MAIN ENVIRONMENTS.
+1.Browser-
+* Runs inside the browser like Chrome/Edge etc.
+* No need to setup - Just browsers console.
 
+2.Node.js-
+* runs JS outside the browser.
+* Require installing node.js
+
+WAYS TO ADD JAVASCRIPT.
+1. INTERNAL JS
+by using <script> tag, at the end of the <body> tag
+2. EXTERNAL JS
+by using .js file
 
