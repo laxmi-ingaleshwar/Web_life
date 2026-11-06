@@ -1,0 +1,47 @@
+SOFTWARE is a set of instructios/ programs that tells computer/device how
+to perform specific task.
+
+TYPES OF SOFTWARE.
+1. SYSTEM SOFTWARE-
+software that manages & supports a computer's hardware & core function.
+ex- Operating Systems like windows, linux / MacOS
+
+2. APPLICATION SOFTWARE
+software that runs upon system software & designed for end-users to perform
+specific task.
+ex- Microsoft-word, Google Chrome, Spotify
+
+
+TYPES OF APPLICATION SOFTWARE
+1.DESKTOP SOFTWARE
+*Internet connection is not mandatory.
+*Installation is mandatory.
+ex- Paint Appication, MS-Excel
+
+
+2. WEB SOFTWARE
+* It requires internet connection to use.
+* Installation is not Mandotory.
+ex- Instagram, Chat-GPT
+
+
+HTML--- Hyper Text Markup Language.
+HTML is used to create a structure of a webpage.
+To create HTML file we supposed to use .html extension.
+HTML is not case sensitive in Nature, either we can go with uppercase/ lowercase
+but it is always recommended to go with lower case.
+
+HISTORY
+HTML is invented by TIM BERNERS LEE in 1991.
+version 1.0 was released for public in 1993.
+current version is html5.
+
+THREE-TIER-ARCHITECTURE
+1.PRESENTATION-TIER
+client side- HTML, CSS, Javascript
+
+2. LOGIC TIER
+server side- Node.js , Java, python, PHP
+
+3.DATA TIER
+Database- SQL, Mongo Db
