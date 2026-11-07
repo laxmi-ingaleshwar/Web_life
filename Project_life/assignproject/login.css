@@ -1,0 +1,102 @@
+body {
+    padding: 20px;
+    background-image: url("https://staticfe.saavn.com/web/6.0/_i/JioSaavn_Login_Banner.webp");
+    background-size: cover;
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size:50%;
+    width:500px;
+    
+}
+.image{
+    width: 100px;
+}
+form{
+    background-position: end;
+    position: relative;
+    left: 900px;
+    margin-top: 100px;
+}
+h1 {
+    margin-bottom: 0;
+    font-family: calibri;
+}
+
+p {
+    margin-top: 0;
+    font-family: calibri;
+    font-size: medium;
+}
+.account{
+    position: relative;
+    margin-left: 100px;
+}
+.connect{
+    /* position: absolute;
+    /* top: 1px; */
+    /* float: left; */ 
+    color: grey;
+}
+
+.heading {
+    font-size: medium;
+}
+
+.description {
+    font-size: small;
+    font-style: normal;
+    font-family: calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+input {
+    padding: 12px;
+    border-radius: 30px;
+    width: 320px;
+    border-style:solid;
+    font-size:medium;
+   
+
+}
+
+button {
+
+    padding: 15px;
+    border-radius: 30px;
+    border-style: none;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+
+
+.continue {
+    background-color: rgb(48, 168, 128);
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.email {
+    background-color: black;
+    color: white;
+    width: 180px;
+    
+}
+
+.facebook {
+    background-color: rgb(4, 4, 139);
+    color: white;
+    width: 180px;
+    margin: 10px;
+}
+.sign{
+    position: relative;
+    margin-left: 300px;
+    border-style: solid;
+    padding: 10px;
+    font-size: small;
+    width: 100px;
+}
+sign.hover{
+    color: aquamarine;
+}
