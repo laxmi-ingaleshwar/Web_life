@@ -58,3 +58,37 @@ by using <script> tag, at the end of the <body> tag
 2. EXTERNAL JS
 by using .js file
 
+
+VARIABLES-
+Variables is like container that stores data.
+It holds values that can be used & changed in a program.
+
+Basic
+var box; // declaration
+box="Toys" // Initialization
+Here, box is a variable & inside that variable we stored toys as values
+
+types
+1.Var
+2.let
+3.Const
+
+DATATYPES.
+1.Primitive Data Types.
+Store a simple,single Value directly in memory.
+TYPES
+1.Number
+2.scripting
+3.Boolean
+4.Null
+5.Undefined
+6.BigInt
+7.Symbol
+
+
+2.Non-Primitive Data Types.
+More complex structures built from classes.  
+1.Object 
+2. Array 
+3.Function
+
