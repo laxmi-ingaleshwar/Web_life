@@ -253,8 +253,8 @@
 // console.log(data.toSorted()); //? [ 1, 2, 20, 4, 40, 7 ]
 // console.log(data.toSorted((a,b)=>a+b)); //? [ 1, 2, 4, 20, 40, 7 ]
 // console.log(data.toSorted((a,b)=>a-b)); //? [ 1, 2, 4, 7, 20, 40 ]
-
 // console.log(data); //? [ 1, 2, 4, 20, 40, 7 ]
+
 
 
 

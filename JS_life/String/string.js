@@ -61,8 +61,8 @@
 
 
 //& 3.raw
-let str = String.raw`hello@123clme<3imhere|hehehehe..)...... `
-console.log(str);
+// let str = String.raw`hello@123clme<3imhere|hehehehe..)...... `
+// console.log(str);
 
 
 //!---Instance Methods
@@ -106,6 +106,7 @@ console.log(str);
 
 // let data = "somu rajo"
 // console.log(data.lastIndexOf("o"));
+
 
 //~ 8.split()--> splits string into array based on separator, we can use separators like spaces, characters
 
