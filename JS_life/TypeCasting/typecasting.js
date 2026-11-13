@@ -151,6 +151,6 @@
 
 
 //& NOT(!)
-console.log(!'hema'); //? false
-console.log(!!'rema'); //? true
+// console.log(!'hema'); //? false
+// console.log(!!'rema'); //? true
 

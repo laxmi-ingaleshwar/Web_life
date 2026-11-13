@@ -79,6 +79,7 @@
 
 //testing github
 
+
 //& array instance method
 
 //~1. push()--> adds one or more element to the end of the array
@@ -154,6 +155,7 @@
 // let arr = [1,2,3,4]
 // console.log(arr.includes(3)); //? true
 // console.log(arr.includes(6)); //? false
+
 
 
 //~ 13. entries()
@@ -238,6 +240,8 @@
 // console.log(data);
 
 //~26. sort()--> 
+
+
 // let data = [1,4,3,7,2,9,0]
 // console.log(data.sort()); //? [0, 1, 2, 3, 4, 7, 9]
 
