@@ -49,6 +49,7 @@
 // console.log(data);
 // print()
 
+
 //! ex-3
 // console.log(age); 
 // var age = 20;
@@ -69,6 +70,7 @@
 // 90
 // 20
 
+
 //! ex-4
 // var x= 15;
 // function Student(){
@@ -85,4 +87,27 @@
 // 15
 // laxmi
 // ReferenceError: name is not defined
+
+
+//! ex-5
+// var shop = 'Dmart';
+// function bill(){
+//     var item = 'shoes';
+//     var price = 1500;
+//     console.log(shop);
+//     console.log(item);
+//     console.log(price);
+// }
+// console.log(shop);
+// bill()
+
+// Dmart
+// Dmart
+// shoes
+// 1500
+
+//~ Here, shop is a global variable bcz it is declared outside the function.
+//~ item & price are local variable bcz they are declared inside the function.
+//~ GEC handles global code , FEC handles Function code.
+//~ GEC is created when program starts, FEC is created when function called.
 
