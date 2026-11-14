@@ -106,8 +106,85 @@
 // shoes
 // 1500
 
+
 //~ Here, shop is a global variable bcz it is declared outside the function.
 //~ item & price are local variable bcz they are declared inside the function.
-//~ GEC handles global code , FEC handles Function code.
+//~ GEC)(global execution context) handles global code , FEC(function execute context) handles Function code.
 //~ GEC is created when program starts, FEC is created when function called.
+
+
+//! ex-6
+// console.log(data);
+// printfun()
+// var printfun = function print(){
+//     let name = 'rani'
+//     console.log(data);
+//     console.log(name);
+// }
+// var data = 'somu'
+// console.log(data);
+
+// TypeError: printfun is not a function
+
+
+// console.log(data);
+// function print(){
+//     let name = 'rani'
+//     console.log(data);
+//     console.log(name);
+       
+// }
+// var data = 'somu'
+// console.log(data);
+// print()
+
+//undefined
+// somu
+// somu
+// rani
+
+//! scope--> it is a region we can access the data/variable
+//& 1. global scope--> it is a scope which is defined outiside function & outside the block & called anywhere in the program.
+
+// console.log(data);
+// function print(){
+//     let name = 'rani'
+//     console.log(data);
+//     console.log(name);
+    
+// }
+// var data = 'somu'
+// console.log(data);
+// print()
+
+// undefined
+// somu
+// somu
+// rani
+
+
+// console.log(data);
+// function print(){
+//     var name= 'rani'
+//     console.log(data);
+// }
+// print()
+// console.log(name);
+// var data = 'somu'
+// console.log(data); //? error
+
+
+//! ex- 6
+// let x= 10
+// function print(){
+//     x=20
+//     console.log(x);
+    
+// }
+// print()
+// console.log(x);
+
+// 20
+// 20
+
 
