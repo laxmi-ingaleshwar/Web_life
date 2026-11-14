@@ -36,6 +36,10 @@
 // console.log(data);
 // print()
 
+// undefined
+// somu
+// print
+
 
 //! ex-2
 
@@ -48,6 +52,11 @@
 // var data = 'somu'
 // console.log(data);
 // print()
+
+// undefined
+// somu
+// somu
+// rani
 
 
 //! ex-3
@@ -109,7 +118,7 @@
 
 //~ Here, shop is a global variable bcz it is declared outside the function.
 //~ item & price are local variable bcz they are declared inside the function.
-//~ GEC)(global execution context) handles global code , FEC(function execute context) handles Function code.
+//~ GEC (global execution context) handles global code , FEC(function execute context) handles Function code.
 //~ GEC is created when program starts, FEC is created when function called.
 
 
@@ -179,7 +188,6 @@
 // function print(){
 //     x=20
 //     console.log(x);
-    
 // }
 // print()
 // console.log(x);
