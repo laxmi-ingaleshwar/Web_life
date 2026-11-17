@@ -154,6 +154,7 @@
 
 //! scope--> it is a region we can access the data/variable
 //& 1. global scope--> it is a scope which is defined outiside function & outside the block & called anywhere in the program.
+//& Var keyword worked in global scope.
 
 // console.log(data);
 // function print(){
@@ -196,3 +197,60 @@
 // 20
 
 
+
+//! Block scope--> everything will be defined within {} curly braces
+//! let & const keyword are worked in bolock scope.
+//& ex-1
+// let flag = true
+
+// if (flag){
+//     let data = 100
+//     console.log("value of data is " + data);
+// }
+// else{
+//     let data = 200
+//     console.log("value of data is " + data);
+    
+// }
+// console.log(data);
+
+
+// ReferenceError: data is not defined
+
+
+
+//& ex-2
+// let flag = true
+
+// if (flag){
+//     var data = 100
+//     console.log("value of data is " + data);
+// }
+// else{
+//     var data = 200
+//     console.log("value of data is " + data);
+    
+// }
+// console.log(data);
+
+// value of data is 100
+// 100
+
+
+// let data1 = 'somu'
+// function outerFunction(){
+//     let data2 = 'rani'
+//     function innerFunction(){
+//         let data3 = 'Raja'
+//         console.log(data1);
+//         console.log(data2);
+//         console.log(data3);
+          
+//     } 
+//     innerFunction()
+// }
+// outerFunction()
+
+// somu
+// rani
+// Raja
