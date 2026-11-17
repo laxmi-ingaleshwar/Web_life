@@ -39,10 +39,10 @@
 // console.log(typeof str);
 
 //& length
-// let data = "LAXMI"
-// console.log(data.length);
-// console.log(data[2]);
-// console.log(data[data.length-1]);
+let data = "LAXMI"
+console.log(data.length);
+console.log(data[2]);
+console.log(data[data.length-1]);
 
 
 //!---static methods
