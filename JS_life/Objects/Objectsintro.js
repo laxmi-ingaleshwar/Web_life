@@ -30,3 +30,113 @@
 //   sleeping: [Function: sleeping]
 // }
 
+
+
+
+//& there are 2 ways access the object properties.
+//~1. BY USING DOT(.) NOTATION.
+
+//~ information
+//& ex-1
+// let xyz = {
+//     name :'somu',
+//     age : 21,
+//     flag : true
+// }
+// console.log(xyz);  //? { name: 'somu', age: 21, flag: true }
+// console.log(xyz.name); //? somu
+
+//& ex-3
+
+// let userinformation ={
+//     name :'somu',
+//     age : 21,
+//     'Is loggedIn' : true,
+
+//     reading: function(){
+//         console.log("somu is reading");   
+//     },
+//     sleeping : function(){
+//         console.log("somu is sleeping");   
+//     },
+//     favColors :['red','green','yellow'],
+//     address :{
+//         city : 'karnataka',
+//         pincode : 586213,
+//     }
+// }
+
+// let key='name'
+// userinformation.reading() //? somu is reading
+// console.log(userinformation.favColors); //? [ 'red', 'green', 'yellow' ]
+// console.log(userinformation.favColors[0]); //? red
+// console.log(userinformation.address.pincode); //? 586213
+
+//~2. BY USING [" "] NOTATION.
+//~  Advantages
+
+//~1. dynamic access by using [], 
+// console.log(userinformation['name']); //? somu
+// console.log(userinformation[key]);    //? somu
+// console.log(userinformation["age"]);  //? 21
+// console.log(userinformation.key); //? undefined
+
+
+//~2. if we have space in key (.notation) will not work get error
+// console.log(userinformation.Is loggedIn); //? error
+// console.log(userinformation['Is loggedIn']); //? true
+
+
+//~3. (.) will not work for special characters.
+// console.log(userinformation[name%]); //? error
+// console.log(userinformation["name"]); //? somu
+// console.log(userinformation.name*); //? error
+
+
+//~ 4. (.) will not work for numbers
+// console.log(userinformation.7); //? error
+// console.log(userinformation[1]); //? undefined
+// console.log(userinformation['7']); //? undefined
+
+//~ userdata
+//~ creating
+// let userdata ={
+//     name :'somu',
+//     age : 21,
+//     flag: true,
+//}
+
+//~ adding
+// userdata.luckyno= '7'
+// console.log(userdata); //? { name: 'somu', age: 21, flag: true, luckyno: '7' }
+
+//~ updating
+// userdata.age= 25
+// console.log(userdata); //? { name: 'somu', age: 25, flag: true }
+
+//~ deleting
+// delete userdata.flag
+// console.log(userdata);  //? { name: 'somu', age: 21 }
+
+
+//& Methods of objects
+// let userdata ={
+//     name :'somu',
+//     age : 21,
+//     flag: true,
+// }
+//& objects inbuilt methods
+//~1. keys()--> It will get access only the keys
+// console.log(Object.keys(userdata)); //? [ 'name', 'age', 'flag' ]
+
+//~2. values()-->  It will get access only the values
+// console.log(Object.values(userdata)); //? [ 'somu', 21, true ]
+
+//~ 3. entries()--> we get each key value pair in the form of nested array
+// let Newdataformate =Object.entries(userdata)
+// console.log(Newdataformate); //? [ [ 'name', 'somu' ], [ 'age', 21 ], [ 'flag', true ] ]
+
+//~ 4. fromEntries()--> it is used to convert back to object
+// console.log(Object.fromEntries(Newdataformate)); //? { name: 'somu', age: 21, flag: true }
+
+
