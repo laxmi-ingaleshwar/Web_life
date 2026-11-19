@@ -383,7 +383,39 @@
 
 // }
 
-//~10. object.defineproperty()
+//~10. object.defineproperty()--> used to add a new property Or modify an existing property of an object with specific settings.
+//& Object.defineProperty(object,property,descriptor);
+//? object=The object in which we want to add or modify a property.
+//? property= The name of the property.
+//? descriptor= specifies the settings and behaviour of that property.
+
+// let student = {};
+// Object.defineProperty(student, 'name',{
+//     value : 'laxmi',
+//     writable : true,
+//     enumerable : true,
+//     configurable : true,
+// });
+
+// student.name= 'laxizz';  //?modification(writable)
+// delete student.name;     //? deletion (configurable)
+// console.log(student.name);
+// for (let key in student){ //? iteration (enumerable)
+//     console.log(key);
+    
+// }
+
+//? value= assign a value
+//? writable= specifies whether we can modify the property's value/not
+//? enumerable= it specifies whether the property should appear during iteration (such as for......in loop)
+//? configurable = specifies whether we can delete the property / change its descriptors.
+
+//& real life example
+//? STUDENT ID CARD
+//? value= Student's name
+//? writable:false= Name cannot be changed.
+//? enumerable: false= Name won't appear during object iteration.
+//? configurable: false= property cannot be deleted.
 
 //~ 11. Object.hasOwn()--> it checks the property is present or not
 // let emp_Info = {
