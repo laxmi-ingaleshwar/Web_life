@@ -14,7 +14,7 @@
 //         console.log("somu is reading ");
 //     },
 //     sleeping: function(){
-//         console.log("somu is sleeping");  
+//         console.log("somu is sleeping");
 //     }
 // }
 // console.log(userinformation);
@@ -212,10 +212,10 @@
 //     'Is loggedIn' : true,
 
 //     reading: function(){
-//         console.log("somu is reading");   
+//         console.log("somu is reading");
 //     },
 //     sleeping : function(){
-//         console.log("somu is sleeping");   
+//         console.log("somu is sleeping");
 //     },
 //     favColors :['red','green','yellow'],
 //     address :{
@@ -233,7 +233,7 @@
 //~2. BY USING [" "] NOTATION.
 //~  Advantages
 
-//~1. dynamic access by using [], 
+//~1. dynamic access by using [],
 // console.log(userinformation['name']); //? somu
 // console.log(userinformation[key]);    //? somu
 // console.log(userinformation["age"]);  //? 21
@@ -257,6 +257,7 @@
 // console.log(userinformation['7']); //? undefined
 
 //~ userdata
+//~ CRUD operation--> IMP
 //~ creating
 // let userdata ={
 //     name :'somu',
@@ -283,7 +284,7 @@
 //     age : 21,
 //     flag: true,
 // }
-//& objects inbuilt methods
+//& objects inbuilt methods--> IMP
 //~1. keys()--> It will get access only the keys
 // console.log(Object.keys(userdata)); //? [ 'name', 'age', 'flag' ]
 
@@ -297,4 +298,117 @@
 //~ 4. fromEntries()--> it is used to convert back to object
 // console.log(Object.fromEntries(Newdataformate)); //? { name: 'somu', age: 21, flag: true }
 
+//~ 5. Object.assign()-->
+//? Object.assign(target,sources)
 
+// let user1 ={
+//     name : 'somu'
+// }
+// let personal_info ={
+//     age : 20,
+//     flag : false
+// }
+// let Info_user = {
+//     pass_code : 'errerere2rddtyh'
+// }
+// let FinalUserdata = Object.assign(user1,personal_info)
+// console.log(FinalUserdata); //? { name: 'somu', age: 20, flag: false }
+
+// let FinalUserdata = Object.assign(Info_user,user1,personal_info)
+// console.log(Info_user);  //? { pass_code: 'errerere2rddtyh', name: 'somu', age: 20, flag: false }
+
+
+//~ 6.Object.seal()--> method that prevents addition, deletion of new properties, but we can modify the properties
+
+// let emp_Info = {
+//     full_name: 'Laxmi Ingaleshwar',
+//     age : 20,
+//     pan_no : "334562uom",
+//     IsLoggedIn : true,
+// }
+// Object.seal(emp_Info) //? Here we are sealing the data
+// console.log("After sealing the data");
+
+// delete emp_Info.pan_no  //? It is not possible to delete data bcz of seal
+// emp_Info.age = 21          //? Modification is possible
+// emp_Info.refferenec = "ashh" //? It is not possible to add the data bcz of seal
+
+// console.log(emp_Info);
+
+
+//~ 7. Object.isSealed()--> boolean result
+// let emp_Info = {
+//     full_name: 'Laxmi Ingaleshwar',
+//     age : 20,
+//     pan_no : "334562uom",
+//     IsLoggedIn : true,
+// }
+// Object.seal(emp_Info) //? If the data is sealed , we cannot do anything, if not we can do 
+// if (Object.isSealed(emp_Info)) {
+//     console.log("It is sealed, we cannot do anything 😒");
+
+// }else{
+//     console.log("Yeahhh 😎,It's not sealed, we can do anything");
+
+// }
+
+//~ 8. Object.freeze()--
+// let emp_Info = {
+//     full_name: 'Laxmi Ingaleshwar',
+//     age : 20,
+//     pan_no : "334562uom",
+//     IsLoggedIn : true,
+// }
+// Object.freeze(emp_Info)
+
+// delete emp_Info.full_name  //? deletion is not possible
+// emp_Info.age = '21'         //? Modification is not possible
+// emp_Info.reff = 'ashh'      //? adding is not possible
+// console.log(emp_Info);
+
+
+//~ 9. Object.isFrozen()
+// let emp_Info = {
+//     full_name: 'Laxmi Ingaleshwar',
+//     age : 20,
+//     pan_no : "334562uom",
+//     IsLoggedIn : true,
+// }
+// Object.freeze(emp_Info)                 //? If the data is freeze , we cannot do anything, if not we can do 
+// if (Object.isFrozen(emp_Info)) {
+//     console.log("It is frozen 😒, we cannot do anything ");
+
+// }else{
+//     console.log("Yeahhh 😎,It's not frozen, we can do anything");
+
+// }
+
+//~10. object.defineproperty()
+
+//~ 11. Object.hasOwn()--> it checks the property is present or not
+// let emp_Info = {
+//     full_name: 'Laxmi Ingaleshwar',
+//     age : 20,
+//     pan_no : "334562uom",
+//     IsLoggedIn : true,
+// }
+// let result= Object.hasOwn(emp_Info,'age') //? true
+// let result= Object.hasOwn(emp_Info,'ageees') //? false
+
+// console.log(result);
+
+//~ 12. Object.is()--> determine whether two values are the exact same value.
+// let emp_Info = {
+//     full_name: 'rani',
+//     age : 20,
+//     pan_no : "334562uom",
+//     IsLoggedIn : true,
+// }
+// let result = Object.is(emp_Info.age , 20)
+
+// let rani_Info = {
+//     name : 'rani', 
+//     age : 21
+// }
+// Object.is(emp_Info,rani_Info)
+// console.log(result); 
