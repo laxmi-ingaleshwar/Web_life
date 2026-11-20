@@ -298,7 +298,7 @@
 //~ 4. fromEntries()--> it is used to convert back to object
 // console.log(Object.fromEntries(Newdataformate)); //? { name: 'somu', age: 21, flag: true }
 
-//~ 5. Object.assign()-->
+//~ 5. Object.assign()-->it copies one/more properties to the new object.
 //? Object.assign(target,sources)
 
 // let user1 ={
@@ -352,7 +352,7 @@
 
 // }
 
-//~ 8. Object.freeze()--
+//~ 8. Object.freeze()--> methods freezes an object completely, preventing new propertiesfrom being added,existing properties removed, properties being changed.
 // let emp_Info = {
 //     full_name: 'Laxmi Ingaleshwar',
 //     age : 20,
@@ -417,7 +417,7 @@
 //? enumerable: false= Name won't appear during object iteration.
 //? configurable: false= property cannot be deleted.
 
-//~ 11. Object.hasOwn()--> it checks the property is present or not
+//~ 11. Object.hasOwn()--> it checks the property is that present or not in an object.
 // let emp_Info = {
 //     full_name: 'Laxmi Ingaleshwar',
 //     age : 20,
@@ -444,3 +444,4 @@
 // }
 // Object.is(emp_Info,rani_Info)
 // console.log(result); 
+
