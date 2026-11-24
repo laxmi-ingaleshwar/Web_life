@@ -8,15 +8,16 @@
 //     }
 // }
 // console.log(userinfo);
-
+//? { name: 'lil', age: 30, flag: false, working: [Function: working] }
 
 
 // ~function execution in memory block
 // function add(a,b,c){
-    // console.log(a+b-c);
-
+// console.log(a+b-c);
 // }
-//  add(10,20,10)
+// add(10,20,10)
+//? 20
+
 //! it checks memory allocations name and length
 // console.log(add.name);
 // console.log(add.length);
@@ -42,16 +43,16 @@
 //     age:10
 // }
 // obj2=obj1
-// console.log(obj1);//{ name: 'somu', age: 10 }
+// console.log(obj1);   //?{ name: 'somu', age: 10 }
 
-// console.log(obj2);//{ name: 'somu', age: 10 }
+// console.log(obj2);   //?{ name: 'somu', age: 10 }
 // console.log("after the update>>>>");
 
 // obj2.age=100
-// console.log(obj1.age); //?100
-// console.log(obj2); //?{ name: 'somu', age: 100 }-->it will effect both bcz reference will be same
+// console.log(obj1.age);    //?100 (it will effect both bcz reference will be same)
+// console.log(obj2);   //?{ name: 'somu', age: 100 } (it will effect both bcz reference will be same)
 
-// ~closure--> access the data from outerfun that to after destroying the outer function that process called as 'closure'.bcz that is in closure environment
+// ~closure--> access the data from outerfun that to after destroying the outer function that process called as 'closure',bcz that is in closure environment
 // function outerfunction() {
 
 //     console.log("outerfunction execution started");

@@ -1,5 +1,7 @@
-//! destructuring means breaking big structure like array into smaller pieces.
-//& Array destructuring=> helps us to extract the elements from the arrays and stored inside variable.
+//! destructuring means breaking big structure like array/object into smaller pieces(variables).
+//! breakdown the complex structure into simpler parts.
+
+//& 1.Array destructuring=> helps us to extract the elements from the arrays and stored inside variable.
 
 // let colors = ['red','green','blue','white','black']
 // console.log(colors[2]); //? blue
