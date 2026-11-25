@@ -24,7 +24,7 @@
 
 
 // let array = new Array(10,20,30,40,50)
-// console.log(array);
+// console.log(array); //? [ 10, 20, 30, 40, 50 ]
 
 // let array1 = new Array(100)
 // console.log(array1);
@@ -76,6 +76,9 @@
 //~3. Array.of()
 // console.log(Array.of(1,2,3,4,5,4,5)); //? [1, 2, 3, 4,5, 4, 5]
 // console.log(Array.of(10)); //? [ 10 ]   
+
+// console.log(Array.of('lax','deep')); //? [ 'lax', 'deep' ]
+// console.log(Array.of('ashh',56,true, )); //? [ 'ashh', 56, true ]
 
 //testing github
 

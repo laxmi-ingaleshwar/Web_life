@@ -79,7 +79,7 @@
 //! filter()--> creates a new array containing all the elements that pass a certain condition.
 //! if the callback function returns true for an element,that element is included in the new array; otherwise,it is excluded.
 //! return new array containing elements that satisfy the condition.
-//!only works with true values.
+//! only works with true values.
 
 //~ filter even numbers from an array.
 // let array=[1,2,3,4,5,6,7,8,9,10]
@@ -133,6 +133,8 @@
 //~ array.reduce((acc,cvalue)=>{
 //~     return acc + cvalue;
 //~ },initialValue);
+
+//! imp parameters
 //! acc(accumulator)=> stores the previous data
 //! cvalue(current value)=> represent the current element of the array.
 
