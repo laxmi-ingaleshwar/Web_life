@@ -1,4 +1,4 @@
-//! Modules--> way to split and organise javascript code into samller, reusable pieces.
+//! Modules--> way to split and organise javascript code into smaller, reusable pieces.
 //! instead of writing all the code in one large file, we can breakdown into smaller files(modules), 
 //! and then import/export functionalities between them.
 
